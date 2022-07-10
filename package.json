@@ -1,0 +1,19 @@
+{
+  "name": "vezdecall",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vc dev",
+    "live": "node live.mjs --owner=-141035772",
+    "video": "node video.mjs --owner=-141035772 --limit=8",
+    "tunnel": "lt --port 3000 --subdomain vezdecall2 & vc dev",
+    "comments": "node comments.mjs --target=vk.com/video-72378974_456239186 --variants=\"да,нет,([A-Z])\\w+\""
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "download": "^8.0.0",
+    "mongodb": "^4.7.0",
+    "node-fetch": "^3.2.7",
+    "videoshow": "^0.1.12",
+    "vk-io": "^4.6.0"
+  }
+}
